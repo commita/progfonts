@@ -1,4 +1,4 @@
-HomePageView = require 'views/home_page_view'
+HomePageView = require 'views/pages/home_view'
 
 describe 'HomePageView', ->
   beforeEach ->
@@ -8,4 +8,4 @@ describe 'HomePageView', ->
     @view.dispose()
 
   it 'should auto-render', ->
-    expect(@view.$el.find 'img').to.have.length 1
+    expect(@view.$el.find 'h1').to.have.length 1
